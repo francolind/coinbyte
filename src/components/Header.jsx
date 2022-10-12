@@ -1,12 +1,12 @@
 
 import search from '../assets/search.png';
-import Logo from '../assets/Logo.png'
+import Logo from '../assets/headerLogo.png';
 
 export const Header = () => {
     return(
             <header className="header-conteiner">
                 <div className="header-logo">
-                    <img src={Logo} alt="Logo" />
+                    <img src={headerLogo} alt="Logo" />
                     <p className='logo-title'>Coinbyte</p>
                 </div>
                 <div className="header-menu">
