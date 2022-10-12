@@ -1,0 +1,531 @@
+
+:root {
+    --color-pri:#281b73;
+    --color-sec:#0f0a27;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+html body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url('./assets/texture.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Urbanist', sans-serif;
+    overflow-x: hidden;
+    color: white;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 600;
+    user-select:none;
+}
+h3 {
+    font-size: 20px;
+    font-size: 400;
+    user-select:none;
+}
+p{
+    font-size: 18px;
+    font-weight: 400;
+    user-select:none;
+}
+img{
+    pointer-events: none;
+}
+/*-----------------header----------------------*/
+.header-conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+.header-logo{
+    display: flex;
+    align-items: center;
+}
+.header-logo img {
+    width: 50px;
+    height: 50px;
+}
+.logo-title{
+    margin-left: 20px;
+    font-size: 30px;
+}
+.header-menu ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.header-menu li{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    user-select:none;
+}
+.header-menu li:hover{
+    cursor: pointer;
+    background-color: var(--color-pri);
+    margin:10px 0;
+    padding: 10px 20px;
+    border-radius:50px;
+    
+}
+.header-menu li:active{
+    background-color: var(--color-sec);
+}
+.li-boton{
+    background-color: white;
+    color: var(--color-sec);
+    margin: 0 !important;
+    padding: 15px 20px;
+    border-radius: 50px;
+}
+.li-boton:hover{
+    color: white;
+}
+
+/*-----------------main----------------------*/
+
+.main-conteiner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 700px;
+}
+.main-title{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.main-title img{
+    width: 500px;
+}
+.main-title p{
+    font-size: 30px;
+    margin-left: 40px;
+    margin-bottom: 100px;
+}
+.main-button{
+    display: flex;
+    justify-content: center;
+}
+button{
+    margin: 20px 40px;
+    padding: 20px 30px;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 400;
+}
+button:hover{
+    cursor: pointer;
+    background-color: var(--color-sec);
+    color: white;
+}
+button:active{
+    background-color: var(--color-pri);
+}
+.primaty-button{
+    border: none;
+    color: var(--color-sec);
+}
+.secundary-button{
+    background-color: rgb(40, 27, 116, 0.2);
+    border:2px solid white;
+    color: white;
+}
+.main-img{
+    width: 30%;
+    margin-top: 100px;
+}   
+.main-paragraph{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:space-between;
+    margin-top: 200px;
+}
+.main-paragraph img{
+    width: 250px;
+}
+
+.decoration1{
+    position: absolute;
+    top: 0;
+    right: 30em;
+}
+
+.decoration2{
+    position: absolute;
+    bottom: 0;
+    right: -6em;
+}
+.decoration3{
+    position: absolute;
+    top: 0;
+    left: -7em;
+}
+/*-----------------info1----------------------*/
+.Info1-conteiner{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 700px;
+}
+
+.Info1-conteiner p{
+    width: 50%;
+}
+
+.info1-content1{
+    position: absolute;
+    top: 2em;
+    right: 10em;
+
+}
+.img1{
+    width: 400px;
+}
+
+.info1-content2{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    width: 600px;
+}
+
+.info1-content3{
+    position: absolute;
+    left: 10em;
+    bottom: 0;
+}
+.img2{
+    width: 400px;
+}
+.arrow{
+    position: absolute;
+    top: 0;
+}
+
+/*-----------------info2----------------------*/
+
+.Info2-conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info2-container-content{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info2-container-phone{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info2-container1-card{
+    width: 20%;
+}
+.card1{
+    margin-bottom: 10em;
+}
+.info2-container2-card{
+    width: 20%;
+}
+.card3{
+    margin-bottom: 10em;
+}
+
+/*-----------------info3----------------------*/
+
+.Info3-conteiner{
+    position: relative;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 900px;
+}
+.info3-conteiner-left{
+    color: var(--color-sec);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info3-conteiner-left p{
+    font-weight: 600;
+}
+.info3-container-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tertiary-button{
+    background-color: var(--color-sec);
+    color: white;
+    padding:15px;
+    margin-left:0;
+}
+.tertiary-button:hover{
+    background-color: var(--color-pri);
+}
+.tertiary-button:active{
+    background-color: var(--color-sec);
+}
+.deco1{
+    position: absolute;
+    top: 0;
+    right: -5em;
+}
+.deco2{
+    position: absolute;
+    left: -4em;
+    bottom: 3em;
+}
+
+.deco3{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.deco4{
+    position: absolute;
+    bottom: 5em;
+}
+
+/*-----------------info4----------------------*/
+
+.Info4-conteiner{
+    position: relative;
+    display: flex;
+}
+.info4-container-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info4-container-title p{
+    width: 50%;
+}
+.info4-deco1{
+    position: absolute;
+    bottom: 3em;
+    right: 10em;
+}
+.info4-deco2{
+    position: absolute;
+    bottom: 3em;
+    right: 20em;
+}
+.info4-deco3{
+    position: absolute;
+    top: 3em;
+    right: 10em;
+}
+
+/*-----------------info5----------------------*/
+
+.Info5-conteiner{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.info5-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info5-container-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info5-container-card1{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.info5-container-card2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.info5-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+/*-----------------info6----------------------*/
+
+.Info6-conteiner{
+    position: relative;
+    background-color: white;
+    color: #000;
+    width: 100%;
+    height: 700px;
+}
+.info6-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.info6-container-card{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.info6-card{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    margin-left: 10%;
+}
+
+.info6-card p{
+    font-weight: 600;
+    width: 60%;
+}
+
+.info6-deco1{
+    position: absolute;
+    right: -5%;
+    bottom: -3%;
+}
+.info6-deco2{
+    position: absolute;
+    top: 0;
+    left: -4%;
+}
+.info6-deco3{
+    position: absolute;
+    top: 0;
+    right: 5%;
+}
+.info6-deco4{
+    position: absolute;
+    bottom: 3%;
+    left: 7%;
+}
+
+
+/*-----------------info7----------------------*/
+
+.Info7-conteiner{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+}
+.info7-title{
+    width: 50%;
+    margin-left: 10%;
+}
+.info7-container-card{
+    width: 50%;
+    margin-top: 100px;
+}
+.info7-card{
+    width: 50%;
+   
+}
+.info7-card h3{
+    font-size: 30px;
+}
+.info7-deco1{
+    position: absolute;
+    top: 0;
+    left: 7%;
+}
+.info7-deco2{
+    position: absolute;
+    bottom: 0;
+    left: 7%;
+}
+.info7-deco3{
+    position: absolute;
+    top: 10%;
+    right:10%;
+}
+.info7-deco4{
+    position: absolute;
+    right:10%;
+    bottom: 0;
+}
+
+
+/*-----------------footer----------------------*/
+.footer-conteiner{
+    display: flex;
+    justify-content:flex-end;
+  
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+}
+.footer-conteiner-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+
+   
+}
+
+.footer-card h3{
+    font-size: 25px;
+}
+.footer-card p{
+    font-size: 15px;
+}
+.footer-card p:hover{
+    cursor: pointer;
+    text-decoration-line:underline;
+    -moz-text-decoration-line:underline;
+}
+.footer-card p:active{
+    color: var(--color-pri);
+}
+.copy h3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+    margin-left: 9%;
+}
